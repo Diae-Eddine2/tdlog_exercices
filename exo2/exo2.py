@@ -28,3 +28,14 @@ fixed_tests_False = (
     ( "spam",    "eggs"  )
 )
 """
+def solution(string, ending):
+    return string.endswith(ending)
+
+# Boucle infinie pour tester un mot à la fois
+while True:
+    string = input("Entrez la chaîne de caractères : ")
+    ending = input("Entrez la fin à vérifier : ")
+    
+    result = solution(string, ending)
+    print(f"La chaîne '{string}' se termine-t-elle par '{ending}' ? {result}")
+
